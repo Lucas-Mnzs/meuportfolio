@@ -548,11 +548,13 @@ footer {
     font-size: 0.8em;
   }
 
-  .swiper-slide h3 {
+  .swiper-slide h3,
+  .certificado h3 {
     font-size: 1em;
   }
 
-  .swiper-slide p {
+  .swiper-slide p,
+  .certificado p {
     font-size: 0.8em;
   }
 
