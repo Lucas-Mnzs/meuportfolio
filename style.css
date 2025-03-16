@@ -437,14 +437,14 @@ footer {
 }
 
 .footer-content a {
-  color: #1db954; /* Verde estilo Spotify, dá um contraste top */
+  color: #a00000;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .footer-content a:hover {
-  color: #0f7a40;
+  color: #8b0000;
 }
 
 .footer-redes {
