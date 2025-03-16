@@ -58,10 +58,38 @@ header a {
   font-size: 1em;
 }
 
+#redesh {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#redesh img {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#redesh img:hover {
+  transform: scale(1.1);
+}
+
+#opc {
+  display: flex;
+  transition: opacity 0.3s ease, visibility 0s ease 0.3s; /* Transição suave de opacidade */
+}
+
+#opc.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s ease 0s; /* Quando a classe 'show' é adicionada, a opacidade é 1 */
+}
+
 #menu {
   height: 40px;
   width: 40px;
   display: none;
+  cursor: pointer;
 }
 
 section {
@@ -462,8 +490,19 @@ footer {
     display: block;
   }
 
-  .opcoes {
-    display: none;
+  #opc {
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 78px;
+    height: calc(100% - 78px);
+    background-image: linear-gradient(45deg, black 87%, darkred);
+    padding: 35px;
+    width: 75%;
   }
 
   #inicio {
@@ -506,5 +545,9 @@ footer {
   .hab {
     width: auto;
     font-size: 0.8em;
+  }
+
+  #redesh {
+    display: flex;
   }
 }
