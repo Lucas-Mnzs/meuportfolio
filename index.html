@@ -5,303 +5,604 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="imagens/" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
     <title>Lucas Menezes</title>
   </head>
   <body>
     <div id="particles-js"></div>
     <!-- Partículas aqui (primeiro elemento) -->
     <header>
-      <a href="#" id="ini">Início</a>
+      <a href="#" id="ini">Lucas Menezes</a>
       <div id="opc">
-        <a href="" class="opcoes">Sobre mim</a>
-        <a href="" class="opcoes">Projetos</a>
+        <a href="#sobre" class="opcoes">Sobre mim</a>
+        <a href="#habilidades" class="opcoes">Habilidades</a>
+        <a href="#proj" class="opcoes">Projetos</a>
+        <a href="#certificados" class="opcoes">Certificados</a>
+        <a href="#contatos" class="opcoes">Contato</a>
       </div>
     </header>
     <main>
-      <section>
+      <section id="inicio">
         <div id="infoPrin">
           <div id="fotoUser">
             <img src="imagens/transferir.png" alt="Foto Usuário" />
           </div>
-          <h1>Lucas Menezes</h1>
-          <p id="desc">Desenvolvedor Full Stack | PHP | C# | JavaScript</p>
         </div>
-        <h1 id="sobre">Sobre mim</h1>
+        <div id="inf">
+          <h1>Olá, eu sou o Lucas</h1>
+          <p id="descricao">Eu sou <span id="desc"></span></p>
+
+          <p class="sm" style="margin-top: 10px; font-size: 1em">
+            Desenvolvedor apaixonado por tecnologia e inovação. Sempre em busca
+            de soluções criativas e eficientes, com foco em entregar resultados
+            que fazem a diferença no mundo digital.
+          </p>
+        </div>
+      </section>
+      <section id="sobre">
+        <h1 id="sobreH">Sobre mim</h1>
         <div id="sobremim">
-          <p class="sm">
-            Comecei minha jornada na programação há 1 ano e meio, sempre
-            buscando aprender e evoluir. Antes disso, passei por áreas
-            totalmente diferentes: trabalhei como courier e auxiliar
-            administrativo em uma empresa de entregas, o que me deu uma visão
-            ampla sobre logística e gestão de processos.
-          </p>
-          <p class="sm">
-            Além disso, servi à Marinha do Brasil como Fuzileiro Naval
-            (2022-2025), experiência que me trouxe disciplina, resiliência e
-            pensamento estratégico – qualidades que aplico diariamente no
-            desenvolvimento de sistemas.
-          </p>
-          <p class="sm">
-            Hoje, meu foco está em criar soluções eficientes para web e desktop,
-            integrando tecnologias como PHP, C#, MySQL, JavaScript (jQuery,
-            AJAX) e APIs. Sempre aberto a novos desafios, seja para freelas,
-            parcerias ou projetos inovadores.
-          </p>
+          <div id="sobreinfo">
+            <p class="sm">
+              Comecei minha jornada na programação há 1 ano e meio, sempre
+              buscando aprender e evoluir. Antes disso, passei por áreas
+              totalmente diferentes: trabalhei como courier e auxiliar
+              administrativo em uma empresa de entregas, o que me deu uma visão
+              ampla sobre logística e gestão de processos.
+            </p>
+            <p class="sm">
+              Além disso, servi à Marinha do Brasil como Fuzileiro Naval
+              (2022-2025), experiência que me trouxe disciplina, resiliência e
+              pensamento estratégico – qualidades que aplico diariamente no
+              desenvolvimento de sistemas.
+            </p>
+            <p class="sm">
+              Hoje, meu foco está em criar soluções eficientes para web e
+              desktop, integrando tecnologias como PHP, C#, MySQL, JavaScript
+              (jQuery, AJAX) e APIs. Sempre aberto a novos desafios, seja para
+              freelas, parcerias ou projetos inovadores.
+            </p>
+          </div>
+          <div id="segundafoto">
+            <img
+              src="imagens/WhatsApp Image 2025-03-15 at 17.39.31.jpeg"
+              alt=""
+            />
+          </div>
         </div>
       </section>
       <section id="habilidades">
         <h2>Habilidades Técnicas</h2>
+        <p
+          style="
+            color: #ccc;
+            width: 700px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            margin-top: -10px;
+          "
+        >
+          Ao longo da minha trajetória como desenvolvedor, me especializei em
+          tecnologias como PHP, C# e JavaScript, criando soluções robustas tanto
+          para web quanto para desktop. Abaixo, compartilho as ferramentas que
+          utilizo para construir sistemas modernos e eficientes.
+        </p>
         <div class="skills-grid">
           <div class="skill">
             <img src="imagens/3599173963dc3b2964a1a3d74e5074d4.png" alt="C#" />
             <h3>C#</h3>
-            <p>Desenvolvimento de apps desktop (Windows Forms), integração com bancos de dados online (AWS) e gráficos com LiveCharts.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/phplogo-removebg-preview.png" alt="PHP" />
-            <h3>PHP</h3>
-            <p>Desenvolvimento backend (MVC, APIs, autenticação), manipulação de banco de dados MySQL e uso do Composer.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/logo-javascript-icon-512.png" alt="JavaScript" />
-            <h3>JavaScript</h3>
-            <p>Manipulação de DOM, consumo de APIs, AJAX, JSON e bibliotecas como jQuery, Swiper, Particle.js.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/logo-html-5-512.png" alt="HTML" />
-            <h3>HTML</h3>
-            <p>Estruturação semântica e responsiva de páginas web, SEO e acessibilidade.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/logo-css-3-512.png" alt="CSS" />
-            <h3>CSS</h3>
-            <p>Estilização avançada, animações, efeitos visuais, Flexbox e Grid Layout.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/Chart.js_logo.svg.png" alt="Chart.js" />
-            <h3>Chart.js</h3>
-            <p>Visualização de dados interativos e gráficos dinâmicos para dashboards.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/amazon-web-services-removebg-preview.png" style="width: 100px;" alt="AWS" />
-            <h3>AWS</h3>
-            <p>Banco de dados MySQL hospedado na AWS, integração de sistemas na nuvem.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/swiperlogo-removebg-preview.png" style="width: 130px;" alt="Swiper.js" />
-            <h3>Swiper.js</h3>
-            <p>Criação de carrosséis e sliders responsivos para uma navegação fluida.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/particlesjs-og-removebg-preview.png" style="width: 130px;" alt="Particle.js" />
-            <h3>Particle.js</h3>
-            <p>Efeitos de partículas animadas para dar um toque interativo nos sites.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/ajax-removebg-preview.png" style="width: 100px;" alt="AJAX" />
-            <h3>AJAX</h3>
-            <p>Requisições assíncronas para comunicação entre frontend e backend sem recarregar a página.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/composer-removebg-preview.png" alt="Composer" />
-            <h3>Composer</h3>
-            <p>Gerenciamento de dependências PHP e automação de carregamento de pacotes.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/kisspng-symfony-php-software-framework-5ae2a212ba9764.0607092915248020667643.png" alt="Symfony" />
-            <h3>Symfony</h3>
-            <p>Framework PHP para desenvolvimento escalável com MVC e segurança.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/jquery-removebg-preview.png" style="width: 100px;" alt="jQuery" />
-            <h3>jQuery</h3>
-            <p>Manipulação de DOM simplificada, requisições AJAX e integração com JSON.</p>
-          </div>
-      
-          <div class="skill"> 
-            <img src="imagens/mysql-removebg-preview.png" style="width: 80px;" alt="MySQL" />
-            <h3>MySQL</h3>
-            <p>Modelagem e gerenciamento de banco de dados relacionais, consultas SQL otimizadas.</p>
-          </div>
-      
-          <div class="skill">
-            <img src="imagens/json-removebg-preview.png" style="width: 100px;" alt="JSON" />
-            <h3>JSON</h3>
-            <p>Formatação e manipulação de dados estruturados, integração com APIs.</p>
+            <p>
+              Desenvolvimento de apps desktop (Windows Forms), integração com
+              bancos de dados online (AWS) e gráficos com LiveCharts.
+            </p>
           </div>
 
           <div class="skill">
-            <img src="imagens/scroll-removebg-preview (1).png"  alt="JSON" />
+            <img src="imagens/phplogo-removebg-preview.png" alt="PHP" />
+            <h3>PHP</h3>
+            <p>
+              Desenvolvimento backend (MVC, APIs, autenticação), manipulação de
+              banco de dados MySQL e uso do Composer.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img src="imagens/logo-javascript-icon-512.png" alt="JavaScript" />
+            <h3>JavaScript</h3>
+            <p>
+              Manipulação de DOM, consumo de APIs, AJAX, JSON e bibliotecas como
+              jQuery, Swiper, Particle.js.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img src="imagens/logo-html-5-512.png" alt="HTML" />
+            <h3>HTML</h3>
+            <p>
+              Estruturação semântica e responsiva de páginas web, SEO e
+              acessibilidade.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img src="imagens/logo-css-3-512.png" alt="CSS" />
+            <h3>CSS</h3>
+            <p>
+              Estilização avançada, animações, efeitos visuais, Flexbox e Grid
+              Layout.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img src="imagens/Chart.js_logo.svg.png" alt="Chart.js" />
+            <h3>Chart.js</h3>
+            <p>
+              Visualização de dados interativos e gráficos dinâmicos para
+              dashboards.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/amazon-web-services-removebg-preview.png"
+              style="width: 100px"
+              alt="AWS"
+            />
+            <h3>AWS</h3>
+            <p>
+              Banco de dados MySQL hospedado na AWS, integração de sistemas na
+              nuvem.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/swiperlogo-removebg-preview.png"
+              style="width: 130px"
+              alt="Swiper.js"
+            />
+            <h3>Swiper.js</h3>
+            <p>
+              Criação de carrosséis e sliders responsivos para uma navegação
+              fluida.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/particlesjs-og-removebg-preview.png"
+              style="width: 130px"
+              alt="Particle.js"
+            />
+            <h3>Particle.js</h3>
+            <p>
+              Efeitos de partículas animadas para dar um toque interativo nos
+              sites.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/ajax-removebg-preview.png"
+              style="width: 100px"
+              alt="AJAX"
+            />
+            <h3>AJAX</h3>
+            <p>
+              Requisições assíncronas para comunicação entre frontend e backend
+              sem recarregar a página.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img src="imagens/composer-removebg-preview.png" alt="Composer" />
+            <h3>Composer</h3>
+            <p>
+              Gerenciamento de dependências PHP e automação de carregamento de
+              pacotes.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/kisspng-symfony-php-software-framework-5ae2a212ba9764.0607092915248020667643.png"
+              alt="Symfony"
+            />
+            <h3>Symfony</h3>
+            <p>
+              Framework PHP para desenvolvimento escalável com MVC e segurança.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/jquery-removebg-preview.png"
+              style="width: 100px"
+              alt="jQuery"
+            />
+            <h3>jQuery</h3>
+            <p>
+              Manipulação de DOM simplificada, requisições AJAX e integração com
+              JSON.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/mysql-removebg-preview.png"
+              style="width: 80px"
+              alt="MySQL"
+            />
+            <h3>MySQL</h3>
+            <p>
+              Modelagem e gerenciamento de banco de dados relacionais, consultas
+              SQL otimizadas.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img
+              src="imagens/json-removebg-preview.png"
+              style="width: 100px"
+              alt="JSON"
+            />
+            <h3>JSON</h3>
+            <p>
+              Formatação e manipulação de dados estruturados, integração com
+              APIs.
+            </p>
+          </div>
+
+          <div class="skill">
+            <img src="imagens/scroll-removebg-preview (1).png" alt="JSON" />
             <h3>ScrollReveal</h3>
-            <p>Implementação de animações de revelação para melhorar a interatividade das páginas.</p>
+            <p>
+              Implementação de animações de revelação para melhorar a
+              interatividade das páginas.
+            </p>
           </div>
         </div>
       </section>
-      <section class="projetos">
+      <section class="projetos" id="proj">
         <h2 style="text-align: center; margin-bottom: 10px">Projetos</h2>
+        <p
+          style="
+            color: #ccc;
+            width: 700px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            margin-top: -10px;
+          "
+        >
+          Aqui você encontra alguns dos projetos que desenvolvi, aplicando as
+          tecnologias que aprendi para criar soluções inovadoras e funcionais.
+          Explore os detalhes e veja como cada projeto reflete minha evolução
+          como desenvolvedor.
+        </p>
         <div class="swiper cards-container">
           <div class="swiper-wrapper">
-              <div
-                class="swiper-slide"
-                onclick="window.open('https://github.com/Sharllack/projeto_rose', '_blank')"
-                style="height: 415px;"
-              >
-                <img
-                  src="imagens/rosemvc.png"
-                  alt="RoseManager - Sistema de Gestão de Entregas"
-                />
-                <h3>RoseManager - Sistema de Gestão de Entregas</h3>
-                <p>
-                  Plataforma web para gerenciamento de entregas e funcionários, com
-                  funcionalidades como registro de entregas concluídas, cálculo de
-                  adicionais, dashboard de desempenho e geração de relatórios
-                  personalizados por período.
-                </p>
-                <p>
-                  <strong>Tecnologias:</strong> PHP, MySQL, JavaScript (jQuery,
-                  Ajax, JSON), Composer, HTML, CSS, Chart.js
-                </p>
-              </div>
-              <div
-                class="swiper-slide"
-                onclick="window.open('https://github.com/Sharllack/ProjetoRose', '_blank')"
-                style="height: 415px;"
-              >
-                <img
-                  src="imagens/rosemvc.png"
-                  alt="RoseManager Desktop - Gestão de Entregas"
-                />
-                <h3>RoseManager Desktop - Gestão de Entregas</h3>
-                <p>
-                  Aplicação desktop para cadastro de entregas, gerenciamento de
-                  funcionários, cálculo de adicionais e métricas de desempenho, com
-                  integração a um banco de dados em nuvem e geração de relatórios
-                  detalhados.
-                </p>
-                <p>
-                  <strong>Tecnologias:</strong> C# (Windows Forms), AWS (Banco de
-                  Dados), LiveCharts
-                </p>
-              </div>
-              <div
-                class="swiper-slide"
-                onclick="window.open('https://github.com/Sharllack/GRUPO11-2024-2-LucasMenezesAlvesdaSilva', '_blank')"
-                style="height: 415px;"
-              >
-                <img
-                  src="imagens/pdmvc.png"
-                  alt="Quentinhas Suam - Plataforma de Delivery Completa"
-                />
-                <h3>Quentinhas Suam - Plataforma de Delivery Completa</h3>
-                <p>
-                  Marketplace de delivery com interfaces para clientes e
-                  restaurantes, incluindo rastreamento de pedidos em tempo real,
-                  cálculo automático de taxas de entrega e painel administrativo
-                  para gestão de pedidos.
-                </p>
-                <p>
-                  <strong>Tecnologias:</strong> PHP (MVC), MySQL, JavaScript
-                  (jQuery, Ajax, JSON), API Google Maps
-                </p>
-              </div>
-              <div
-                class="swiper-slide"
-                onclick="window.open('https://github.com/Sharllack/Projeto_delivery', '_blank')"
-                style="height: 415px;"
-              >
-                <img
-                  src="imagens/pd.png"
-                  alt="Quentinhas Suam - Sistema de Pedidos Online"
-                />
-                <h3>Quentinhas Suam - Sistema de Pedidos Online</h3>
-                <p>
-                  Plataforma web para restaurantes, com carrinho de compras,
-                  acompanhamento de status de pedidos em tempo real, notificações e
-                  integração com API de mapas para cálculo de rotas.
-                </p>
-                <p>
-                  <strong>Tecnologias:</strong> PHP, MySQL, JavaScript (jQuery,
-                  Ajax, JSON), API Google Maps
-                </p>
-              </div>
-              <div
-                class="swiper-slide"
-                onclick="window.open('https://github.com/Sharllack/Portfolio.Dra.Caroline.Menezes', '_blank')"
-                style="height: 415px;"
-              >
-                <img
-                  src="imagens/Carol.png"
-                  alt="Portfólio Dra. Caroline Menezes"
-                />
-                <h3>Portfólio Dra. Caroline Menezes</h3>
-                <p>
-                  Site profissional desenvolvido para uma advogada, com apresentação
-                  de serviços, áreas de atuação, experiência e um formulário de
-                  contato integrado para captação de clientes.
-                </p>
-                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-              </div>
-              <div
-                class="swiper-slide"
-                onclick="window.open('https://github.com/Sharllack/avaliacao-formadora-01-Lucas-Menezes-Alves-da-Silva', '_blank')"
-                style="height: 415px;"
-              >
-                <img
-                  src="imagens/avf.png"
-                  alt="Projeto Acadêmico - Apresentação Interativa"
-                />
-                <h3>Projeto Acadêmico - Apresentação Interativa</h3>
-                <p>
-                  Projeto universitário que combina uma apresentação pessoal com
-                  exercícios interativos, utilizando animações modernas e efeitos
-                  visuais para engajar o usuário.
-                </p>
-                <p>
-                  <strong>Tecnologias:</strong> HTML, CSS, JavaScript, Particle.js,
-                  Swiper
-                </p>
-              </div>
+            <div
+              class="swiper-slide"
+              onclick="window.open('https://github.com/Sharllack/projeto_rose', '_blank')"
+              style="height: 415px"
+            >
+              <img
+                src="imagens/rosemvc.png"
+                alt="RoseManager - Sistema de Gestão de Entregas"
+              />
+              <h3>RoseManager - Sistema de Gestão de Entregas</h3>
+              <p>
+                Plataforma web para gerenciamento de entregas e funcionários,
+                com funcionalidades como registro de entregas concluídas,
+                cálculo de adicionais, dashboard de desempenho e geração de
+                relatórios personalizados por período.
+              </p>
+              <p>
+                <strong>Tecnologias:</strong>
+                <span class="tec">PHP</span>
+                <span class="tec">MySQL</span>
+                <span class="tec">JavaScript</span>
+                <span class="tec">jQuery</span>
+                <span class="tec">Ajax</span>
+                <span class="tec">JSON</span>
+                <span class="tec">Composer</span>
+                <span class="tec">HTML</span>
+                <span class="tec">CSS</span>
+                <span class="tec">Chart.js</span>
+              </p>
+            </div>
+            <div
+              class="swiper-slide"
+              onclick="window.open('https://github.com/Sharllack/ProjetoRose', '_blank')"
+              style="height: 415px"
+            >
+              <img
+                src="imagens/rosemvc.png"
+                alt="RoseManager Desktop - Gestão de Entregas"
+              />
+              <h3>RoseManager Desktop - Gestão de Entregas</h3>
+              <p>
+                Aplicação desktop para cadastro de entregas, gerenciamento de
+                funcionários, cálculo de adicionais e métricas de desempenho,
+                com integração a um banco de dados em nuvem e geração de
+                relatórios detalhados.
+              </p>
+              <p>
+                <strong>Tecnologias:</strong>
+                <span class="tec">C#</span>
+                <span class="tec">Windows Forms</span>
+                <span class="tec">AWS</span>
+                <span class="tec">Banco de Dados</span>
+                <span class="tec">LiveCharts</span>
+              </p>
+            </div>
+            <div
+              class="swiper-slide"
+              onclick="window.open('https://github.com/Sharllack/GRUPO11-2024-2-LucasMenezesAlvesdaSilva', '_blank')"
+              style="height: 415px"
+            >
+              <img
+                src="imagens/pdmvc.png"
+                alt="Quentinhas Suam - Plataforma de Delivery Completa"
+              />
+              <h3>Quentinhas Suam - Plataforma de Delivery Completa</h3>
+              <p>
+                Marketplace de delivery com interfaces para clientes e
+                restaurantes, incluindo rastreamento de pedidos em tempo real,
+                cálculo automático de taxas de entrega e painel administrativo
+                para gestão de pedidos.
+              </p>
+              <p>
+                <strong>Tecnologias:</strong>
+                <span class="tec">PHP</span>
+                <span class="tec">MVC</span>
+                <span class="tec">MySQL</span>
+                <span class="tec">JavaScript</span>
+                <span class="tec">jQuery</span>
+                <span class="tec">Ajax</span>
+                <span class="tec">JSON</span>
+                <span class="tec">API Google Maps</span>
+              </p>
+            </div>
+            <div
+              class="swiper-slide"
+              onclick="window.open('https://github.com/Sharllack/Projeto_delivery', '_blank')"
+              style="height: 415px"
+            >
+              <img
+                src="imagens/pd.png"
+                alt="Quentinhas Suam - Sistema de Pedidos Online"
+              />
+              <h3>Quentinhas Suam - Sistema de Pedidos Online</h3>
+              <p>
+                Plataforma web para restaurantes, com carrinho de compras,
+                acompanhamento de status de pedidos em tempo real, notificações
+                e integração com API de mapas para cálculo de rotas.
+              </p>
+              <p>
+                <strong>Tecnologias:</strong>
+                <span class="tec">PHP</span>
+                <span class="tec">MySQL</span>
+                <span class="tec">JavaScript</span>
+                <span class="tec">jQuery</span>
+                <span class="tec">Ajax</span>
+                <span class="tec">JSON</span>
+                <span class="tec">API Google Maps</span>
+              </p>
+            </div>
+            <div
+              class="swiper-slide"
+              onclick="window.open('https://github.com/Sharllack/Portfolio.Dra.Caroline.Menezes', '_blank')"
+              style="height: 415px"
+            >
+              <img
+                src="imagens/Carol.png"
+                alt="Portfólio Dra. Caroline Menezes"
+              />
+              <h3>Portfólio Dra. Caroline Menezes</h3>
+              <p>
+                Site profissional desenvolvido para uma advogada, com
+                apresentação de serviços, áreas de atuação, experiência e um
+                formulário de contato integrado para captação de clientes.
+              </p>
+              <p>
+                <strong>Tecnologias:</strong>
+                <span class="tec">HTML</span>
+                <span class="tec">CSS</span>
+                <span class="tec">JavaScript</span>
+              </p>
+            </div>
+            <div
+              class="swiper-slide"
+              onclick="window.open('https://github.com/Sharllack/avaliacao-formadora-01-Lucas-Menezes-Alves-da-Silva', '_blank')"
+              style="height: 415px"
+            >
+              <img
+                src="imagens/avf.png"
+                alt="Projeto Acadêmico - Apresentação Interativa"
+              />
+              <h3>Projeto Acadêmico - Apresentação Interativa</h3>
+              <p>
+                Projeto universitário que combina uma apresentação pessoal com
+                exercícios interativos, utilizando animações modernas e efeitos
+                visuais para engajar o usuário.
+              </p>
+              <p>
+                <strong>Tecnologias:</strong>
+                <span class="tec">HTML</span>
+                <span class="tec">CSS</span>
+                <span class="tec">JavaScript</span>
+                <span class="tec">Particle.js</span>
+                <span class="tec">Swiper</span>
+              </p>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <h2 id="contato">Contatos</h2>
-      <div id="redes">
-        <a
-          href="https://wa.me/5521990420932?text=Olá! Eu gostaria de falar com o Lucas Menezes!"
-          ><img src="imagens/icons8-whatsapp-100.png" alt="WhatsApp"
-        /></a>
-        <a href="mailto:judocalucas@hotmail.com"
-          ><img src="imagens/icons8-nova-mensagem-100.png" alt="Email"
-        /></a>
-        <a href="https://www.linkedin.com/in/lucas-menezes-962075314/"
-          ><img src="imagens/icons8-linkedin-100.png" alt="LinkedIn"
-        /></a>
+      <section id="certificados">
+        <h2 style="text-align: center">Certificados</h2>
+        <p
+          style="
+            color: #ccc;
+            width: 700px;
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+          "
+        >
+          Esses são alguns dos certificados que conquistei ao longo da minha
+          jornada, refletindo meu compromisso com o aprendizado e o
+          aprimoramento contínuo nas áreas de desenvolvimento de software e
+          tecnologias web.
+        </p>
+        <div id="certificados-container">
+          <a target="_blank" href="certificados/Certificado Back-end.pdf" class="certificado" id="back">
+            <img
+              src="imagens/Captura de tela 2025-03-15 214412.png"
+              alt="Certificado Back-end PHP Faculdade"
+              class="certificado-img"
+            />
+            <h3>Certificado Back-end PHP Faculdade</h3>
+            <p>
+              Este certificado foi obtido na faculdade, destacando as
+              habilidades adquiridas em desenvolvimento de Back-end utilizando
+              PHP.
+            </p>
+          </a>
+          <a target="_blank" href="certificados/Certificado Front-end.pdf" class="certificado" id="front">
+            <img
+              src="imagens/Captura de tela 2025-03-15 214355.png"
+              alt="Certificado Front-end Faculdade"
+              class="certificado-img"
+            />
+            <h3>Certificado Front-end Faculdade</h3>
+            <p>
+              Certificado referente à conclusão do curso de Front-end, abordando
+              as tecnologias e práticas essenciais para desenvolvimento de
+              interfaces web.
+            </p>
+          </a>
+          <a target="_blank" href="certificados/c1.pdf" class="certificado" id="cl">
+            <img
+              src="imagens/Captura de tela 2025-03-15 214401.png"
+              alt="Certificado C# Lógica de Programação"
+              class="certificado-img"
+            />
+            <h3>Certificado C# Lógica de Programação Udemy</h3>
+            <p>
+              Este certificado da Udemy valida o aprendizado de lógica de
+              programação utilizando C#, abordando fundamentos e estruturação de
+              algoritmos.
+            </p>
+          </a>
+          <a target="_blank" href="certificados/c2.pdf" class="certificado" id="cp">
+            <img
+              src="imagens/Captura de tela 2025-03-15 214406.png"
+              alt="Certificado C# POO"
+              class="certificado-img"
+            />
+            <h3>Certificado C# POO</h3>
+            <p>
+              Certificado sobre Programação Orientada a Objetos em C#, onde
+              conceitos como classes, herança e polimorfismo foram abordados em
+              profundidade.
+            </p>
+          </a target="_blank" href="certificados/">
+        </div>
+      </section>
+      <section id="contatos">
+        <h2 id="contato">Contatos</h2>
+        <p id="descricao-contato">
+          Se você tiver interesse em conversar sobre projetos, parcerias ou
+          mesmo tirar dúvidas sobre o meu trabalho, fique à vontade para entrar
+          em contato. Vamos trocar ideias e explorar novas possibilidades!
+        </p>
+        <div id="redes">
+          <a
+            href="https://wa.me/5521990420932?text=Olá! Eu gostaria de falar com o Lucas Menezes!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <img src="imagens/icons8-whatsapp-100.png" alt="WhatsApp" />
+          </a>
+          <a href="mailto:judocalucas@hotmail.com" aria-label="Email">
+            <img src="imagens/icons8-nova-mensagem-100.png" alt="Email" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucas-menezes-962075314/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img src="imagens/icons8-linkedin-100.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://github.com/Sharllack"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img src="imagens/icons8-github-100.png" alt="GitHub" />
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
-      <p>
-        Desenvolvido por
-        <a
-          href="https://www.linkedin.com/in/lucas-menezes-962075314/"
-          target="_blank"
-          >Lucas Menezes</a
-        >
-      </p>
+      <div class="footer-content">
+        <p>
+          © <span id="ano-atual"></span> Lucas Menezes. Todos os direitos
+          reservados.
+        </p>
+        <p>
+          Desenvolvido com 💻 e ☕ por
+          <a
+            href="https://www.linkedin.com/in/lucas-menezes-962075314/"
+            target="_blank"
+            >Lucas Menezes</a
+          >
+        </p>
+        <div class="footer-redes">
+          <a
+            href="https://wa.me/5521990420932"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <img src="imagens/icons8-whatsapp-100.png" alt="WhatsApp" />
+          </a>
+          <a href="mailto:judocalucas@hotmail.com" aria-label="Email">
+            <img src="imagens/icons8-nova-mensagem-100.png" alt="Email" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucas-menezes-962075314/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img src="imagens/icons8-linkedin-100.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://github.com/Sharllack"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img src="imagens/icons8-github-100.png" alt="GitHub" />
+          </a>
+        </div>
+        <a href="#" id="voltar-topo">↑ Voltar ao topo</a>
+      </div>
     </footer>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>

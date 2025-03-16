@@ -6,6 +6,10 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -41,14 +45,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  z-index: 9999;
-  background-color: #1a1a1a20;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(145deg, black 80%, #8b0000);
+  z-index: 999;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.488);
 }
 
 header a {
   color: white;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 section {
@@ -66,12 +73,49 @@ section {
   }
 }
 
+#inf h1,
 #ini {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(90deg, #fff, #ff4c4c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   padding: 15px;
+}
+
+#ini {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#inicio {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 105px;
 }
 
 .opcoes {
   padding: 5px;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.opcoes::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Posição da linha abaixo do texto */
+  width: 0;
+  height: 2px; /* Espessura da linha */
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s ease-in-out;
+}
+
+.opcoes:hover::after {
+  width: 100%; /* Expande a linha da esquerda para a direita */
 }
 
 #fotoUser {
@@ -119,13 +163,17 @@ h1 {
 }
 
 #sobremim {
-  text-align: center;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .sm {
   display: block;
   padding: 5px;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #ccc;
 }
 
@@ -170,21 +218,6 @@ h1 {
   color: #ccc;
 }
 
-#redes {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-#redes a {
-  margin: 10px;
-}
-
-#redes img {
-  height: 40px;
-  width: 40px;
-}
-
 .projetos {
   padding: 20px;
   text-align: center;
@@ -192,6 +225,7 @@ h1 {
 
 .swiper-slide {
   background-color: #333;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.503);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -221,25 +255,180 @@ h1 {
   color: #ccc;
 }
 
+.tec {
+  padding: 5px;
+  background-color: #6c6c6c;
+  border-radius: 25px;
+  line-height: 30px;
+}
+
+#inf {
+  width: 50%;
+  margin-left: 20px;
+}
+
+#inf h1 {
+  font-size: 2.5em;
+  margin-left: 0;
+}
+
+#descricao {
+  text-indent: 5px;
+  font-size: 1.5em;
+}
+
+#segundafoto img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.52));
+}
+
+#sobreinfo {
+  width: 50%;
+}
+
+#certificados {
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+#certificados-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.certificado {
+  width: 23%;
+  background-color: #333;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.certificado img {
+  width: 100%;
+  height: 150px;
+  filter: blur(1px);
+  transition: 0.5s ease;
+}
+
+.certificado:hover img {
+  scale: 1.14;
+  filter: blur(0);
+}
+
+.certificado h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.certificado p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
+  padding: 5px;
+}
+
 #contato {
   text-align: center;
+}
+
+#descricao-contato {
+  color: #ccc;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#redes a {
+  transition: transform 0.3s ease-in-out;
+}
+
+#redes a:hover {
+  transform: scale(1.1);
+}
+
+#redes img {
+  height: 40px;
+  width: 40px;
 }
 
 footer {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 0.7em;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  font-size: 0.8em;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
 }
 
-footer a {
-  color: white;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: #1db954; /* Verde estilo Spotify, dá um contraste top */
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-content a:hover {
+  color: #0f7a40;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.footer-redes a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-redes a:hover {
+  transform: scale(1.2);
+}
+
+.footer-redes img {
+  height: 30px;
+  width: 30px;
+}
+
+#voltar-topo {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#voltar-topo:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
