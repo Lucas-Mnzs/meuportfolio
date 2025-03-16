@@ -553,7 +553,11 @@ footer {
   }
 
   .swiper-slide p {
-    font-size: 0.7em;
+    font-size: 0.8em;
+  }
+
+  .swiper-slide span {
+    font-size: 0.8em;
   }
 
   #redesh {
