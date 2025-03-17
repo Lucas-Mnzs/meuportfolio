@@ -480,6 +480,16 @@ footer {
   transform: translateY(-2px);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b0000;
+  border-radius: 10px;
+}
+
 @media (max-width: 860px) {
   #ini {
     font-size: 1.5em;
