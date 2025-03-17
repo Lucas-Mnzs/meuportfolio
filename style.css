@@ -170,7 +170,6 @@ h2,
   width: 160%;
   height: 120%;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 #infoPrin {
@@ -437,14 +436,14 @@ footer {
 }
 
 .footer-content a {
-  color: #a00000;
+  color: #d80000;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .footer-content a:hover {
-  color: #8b0000;
+  color: #b80000;
 }
 
 .footer-redes {
