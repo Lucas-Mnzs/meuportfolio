@@ -6,6 +6,36 @@
   color: white;
 }
 
+@font-face {
+  font-family: "h1";
+  src: url("fonte/RobotoCondensed-VariableFont_wght.ttf");
+}
+
+#descer {
+  position: fixed;
+  z-index: 99999;
+  bottom: 10px;
+  right: 10px;
+  display: none; /* Inicialmente oculta */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 1s ease-in-out; /* Transição suave para a opacidade */
+  animation: transform 0.8s ease-in infinite alternate;
+}
+
+@keyframes transform {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+#descer img {
+  height: 40px;
+  width: 40px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,14 +63,14 @@ body {
   z-index: -1; /* Coloca as partículas atrás do conteúdo */
 }
 
-header,
+#cabecalho,
 main,
 footer {
   position: relative; /* Garante que o conteúdo fique acima das partículas */
   z-index: 1; /* Coloca o conteúdo na frente das partículas */
 }
 
-header {
+#cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,8 +82,7 @@ header {
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.488);
 }
 
-header a {
-  color: white;
+#cabecalho a {
   text-decoration: none;
   font-size: 1em;
 }
@@ -92,25 +121,10 @@ header a {
   cursor: pointer;
 }
 
-section {
-  animation: appear 1s ease;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
 h1,
 h2,
 #ini {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "h1";
   background: linear-gradient(90deg, #fff, #ff4c4c);
   background-clip: text;
   -webkit-background-clip: text;
@@ -126,8 +140,21 @@ h2,
 #inicio {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  padding-top: 105px;
+  height: 100vh;
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(0, 200px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 .opcoes {
@@ -153,41 +180,10 @@ h2,
   width: 100%; /* Expande a linha da esquerda para a direita */
 }
 
-#fotoUser {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(94, 0, 0, 0.894);
-  filter: drop-shadow(0 0 5px rgb(64, 0, 0));
-}
-
-#fotoUser img {
-  width: 160%;
-  height: 120%;
-  transition: 0.5s;
-}
-
-#infoPrin {
-  text-align: center;
-  text-shadow: 2px 2px 2px black;
-}
-
 h1 {
   margin: 10px;
   letter-spacing: 1px;
   font-weight: 700;
-}
-
-#infoPrin p {
-  margin: 10px;
-  font-size: 0.8em;
-  font-weight: 500;
-  color: #ccc;
 }
 
 #descPrin {
@@ -311,29 +307,36 @@ h1 {
 }
 
 #inf {
-  width: 50%;
-  margin-left: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 #inf h1 {
-  font-size: 2.5em;
-  margin-left: 0;
+  font-size: 6em;
+  margin: 0;
+  padding: 0;
 }
 
-#descricao {
-  text-indent: 5px;
-  font-size: 1.5em;
+#segundafoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 0 0 8px rgba(177, 0, 0, 0.52);
+  overflow: hidden;
 }
 
 #segundafoto img {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  height: 400px;
+  width: 500px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.52));
 }
 
 #sobreinfo {
   width: 50%;
+  margin-left: 15px;
 }
 
 #certificados {
@@ -507,8 +510,6 @@ footer {
     align-items: center;
     position: fixed;
     right: 0;
-    top: 78px;
-    height: calc(100% - 78px);
     background-image: linear-gradient(45deg, black 87%, darkred);
     padding: 35px;
     width: 75%;
@@ -520,12 +521,12 @@ footer {
 
   #inf {
     width: 100%;
-    margin-left: 0;
   }
 
   #inf h1 {
-    font-size: 1.7em;
+    font-size: 2.5em;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   #descricao {
@@ -539,13 +540,25 @@ footer {
     text-align: center;
   }
 
+  #segundafoto {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  #segundafoto img {
+    height: 300px;
+    width: 400px;
+  }
+
   #sobremim {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   #sobreinfo {
     width: 100%;
     text-align: center;
+    margin-left: 0;
   }
 
   .sm {
